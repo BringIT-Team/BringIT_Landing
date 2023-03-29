@@ -3,7 +3,7 @@ import './index.css'
 
 const Header = () => {
   return (
-    <header>
+    <header className="px-5">
       <img className="logo" src={logo}/>
       <nav>
         <span>Home</span>

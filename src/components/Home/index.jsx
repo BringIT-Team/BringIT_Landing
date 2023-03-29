@@ -5,7 +5,7 @@ const Home = () => {
     <section className="home flex flex-col">
       <div className="m-auto text-center max-w-3xl">
         <div className="titleBackground mx-10">
-          <h1 className="text-4xl font-semibold">Pour tes soirées, si tu sais quoi apporter just Bring IT !</h1>
+          <h1>Pour tes soirées, si tu sais quoi apporter just Bring IT !</h1>
         </div>
         <p className="text-md mt-10 mx-10 text-md">
           Avec bringIt, on évite le gaspillage et les dépenses inutiles grâce à une visualisation 

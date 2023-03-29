@@ -1,0 +1,29 @@
+.offers {
+  max-width: 320px;
+  width: 320px
+}
+
+.offers:first-child {
+  grid-column-start: 2;
+}
+
+.offers h3 {
+  color: #6226C2;
+}
+
+.offers li {
+  margin-bottom: 1.5rem;
+}
+
+.offers li::before {
+  font-family: "Material Icons Outlined";
+  content: "\e5cc";
+  color: #6226C2;
+  margin-right: 0.5rem;
+  vertical-align: text-bottom;
+}
+
+.offers:not(:first-child):not(:last-child) {
+  border: 2px solid #6226C2;
+  border-radius: 0.375rem;
+}

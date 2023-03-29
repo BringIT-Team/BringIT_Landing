@@ -7,13 +7,14 @@ header {
 }
 
 nav {
-  width: 30%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
 }
 
 nav span {
-  font-family: 'Tilt Warp', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .logo {

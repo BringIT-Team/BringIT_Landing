@@ -11,6 +11,8 @@ h1 {
   color: #240e35;
   mix-blend-mode: lighten;
   line-height: 55px !important;
+  font-size: 48px !important;
+  font-weight: 600 !important;
 }
 
 .titleBackground {

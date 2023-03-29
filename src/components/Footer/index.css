@@ -1,0 +1,13 @@
+footer {
+  background-color: #343a40;
+  color: #98a6ad;
+  padding: 1rem;
+  text-align: center;
+  height: 300px;
+}
+
+.shape {
+  position: absolute;
+  bottom: -2px;
+  transform: scale(2);
+}

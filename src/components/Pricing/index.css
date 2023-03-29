@@ -4,7 +4,13 @@
 }
 
 .offers:first-child {
-  grid-column-start: 2;
+  grid-column-start: 0;
+}
+
+@media (min-width: 1280px) {
+  .offers:first-child {
+    grid-column-start: 2;
+  }
 }
 
 .offers h3 {

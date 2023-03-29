@@ -10,11 +10,13 @@ nav {
   width: 25%;
   display: flex;
   justify-content: space-between;
+  min-width: 300px;
 }
 
 nav span {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .logo {

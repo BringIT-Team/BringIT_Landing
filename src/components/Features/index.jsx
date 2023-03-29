@@ -1,10 +1,11 @@
+import { forwardRef } from 'react';
 import Feature from './Feature';
 import './index.css';
 import party from '../../assets/party.svg';
 
-const Features = () => {
+const Features = forwardRef(({}, ref) => {
   return (
-    <section className="features text-center flex flex-col">
+    <section ref={ref} className="features text-center flex flex-col">
       <div className="m-auto">
         <h2 className="text-3xl">Fonctionnalités</h2>
         <div className="grid grid-cols-12 gap-10 mt-16">
@@ -28,6 +29,6 @@ const Features = () => {
       <img className="partyDraw mx-auto mt-18" src={party} />
     </section>
   );
-};
+});
 
 export default Features;

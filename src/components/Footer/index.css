@@ -5,9 +5,3 @@ footer {
   text-align: center;
   height: 300px;
 }
-
-.shape {
-  position: absolute;
-  bottom: -2px;
-  transform: scale(2);
-}

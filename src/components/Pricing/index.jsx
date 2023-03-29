@@ -1,8 +1,10 @@
+import { forwardRef } from 'react';
+
 import PricingCard from './PricingCard';
 
 import './index.css';
 
-const Pricing = () => {
+const Pricing = forwardRef(({}, ref) => {
 
   const plans = [
     {
@@ -35,15 +37,15 @@ const Pricing = () => {
     },
   ];
   return (
-    <div className="mt-10 mb-10 flex flex-col items-center">
+    <section ref={ref} className="mt-20 mb-10 flex flex-col items-center">
       <h2 className="text-3xl">Offres</h2>
-      <div className="mt-10 grid grid-cols-11 gap-8">
+      <div className="mt-20 grid grid-cols-11 gap-8">
         { plans.map((p, i) => (
           <PricingCard key={i} plan={p} />
         ))}
       </div>
-    </div>
+    </section>
   );
-};
+});
 
 export default Pricing;

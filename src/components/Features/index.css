@@ -23,5 +23,12 @@
 }
 
 .partyDraw {
-  width: 40%;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px){
+  .partyDraw {
+    width: 40%;
+  }
 }

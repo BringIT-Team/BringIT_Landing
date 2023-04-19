@@ -1,5 +1,5 @@
 import { useState, forwardRef } from 'react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 import './index.css'
 
 const Header = forwardRef(({ onNavClick }, ref) => {

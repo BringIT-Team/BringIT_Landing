@@ -6,7 +6,7 @@ const PricingCard = ({ plan }) => {
       <h3 className="mb-6 mt-6">{plan.name}</h3>
       <span className="text-4xl">{plan.price}</span>
       { plan.monthly && (
-        <span className="mt-2 text-gray-400 text-sm">Par mois</span>
+        <span className="mt-2 text-gray-500 text-sm">Par mois</span>
       )}
       <ul className="mt-14 mb-14">
         {plan.features.map((f, i) => (

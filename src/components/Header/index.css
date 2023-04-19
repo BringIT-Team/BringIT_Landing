@@ -11,13 +11,17 @@ header {
   width: 25%;
   display: flex;
   justify-content: space-between;
-  min-width: 300px;
+  min-width: 450px;
 }
 
 .desktop-nav span {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   cursor: pointer;
+}
+
+.desktop-nav span:hover {
+  color: #5825C0;
 }
 
 .mobile-nav {

@@ -5,9 +5,6 @@ import './index.css'
 const Header = forwardRef(({ onNavClick }, ref) => {
   const [menuOpened, setMenuOpened] = useState(false);
 
-
-
-
   const onMenuClick = () => setMenuOpened(!menuOpened);
 
   const onLinkClick = topic => {
@@ -17,13 +14,13 @@ const Header = forwardRef(({ onNavClick }, ref) => {
 
   return (
     <header ref={ref} className="px-5">
-      <img className="logo" src={logo}/>
+      <img className="logo" src={logo} alt="le logo de bringit"/>
       <span onClick={onMenuClick} className="md:hidden icon">{menuOpened ? 'close' : 'menu'}</span>
       <nav className="desktop-nav hidden md:flex">
-        <span onClick={() => onNavClick('header')}>Home</span>
-        <span onClick={() => onNavClick('features')}>Features</span>
-        <span onClick={() => onNavClick('pricing')}>Pricing</span>
-        <span onClick={() => onNavClick('reviews')}>Reviews</span>
+        <span onClick={() => onNavClick('header')}>Accueil</span>
+        <span onClick={() => onNavClick('features')}>Fonctionnalités</span>
+        <span onClick={() => onNavClick('pricing')}>Offres</span>
+        <span onClick={() => onNavClick('reviews')}>FAQ</span>
       </nav>
       <nav className="mobile-nav ease-in duration-300" style={{ width: menuOpened ? '100%' : '0px' }}>
         <span 

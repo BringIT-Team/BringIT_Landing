@@ -2,8 +2,8 @@
   display: flex;
   height: calc(100vh - 100px);
   position: relative;
-  /* padding-bottom: 260px;
-  padding-top: 150px; */
+  margin-bottom: 100px;
+  /*padding-top: 150px; */
   /* background-color: #f2f6fa; */
 }
 
@@ -31,4 +31,5 @@ a {
   position: absolute;
   bottom: 0px;
   left: calc(50% - 22.5px);
+  cursor: pointer;
 }

@@ -8,40 +8,43 @@ const Pricing = forwardRef(({}, ref) => {
 
   const plans = [
     {
-      name: 'Visitor',
-      price: 0,
+      name: 'Visiteur',
+      price: 'Gratuit',
       features: [
         '3 évènement par mois',
-        '15 personnes par évènement',
+        '15 personnes par évènements',
       ],
+      monthly: false,
     },
     {
       name: 'Premium',
-      price: 2,
+      price: '2€',
       features: [
-        'Nombre illimité d\'évènement',
+        'Nombre illimité d\'évènements',
         'Nombre illimité de personnes',
         'Groupes d\'amis',
-        'Duplication d\'évènement',
+        'Duplication d\'évènements',
       ],
+      monthly: true,
     },
     {
-      name: 'Account',
-      price: 0,
+      name: 'Compte',
+      price: 'Inscription',
       features: [
-        '6 évènement par mois',
-        '15 personnes par évènement',
+        '6 évènements par mois',
+        '15 personnes par évènements',
         'Sondages',
         'Badges personnalisés',
       ],
+      monthly: false,
     },
   ];
   return (
-    <section ref={ref} className="mt-20 mb-10 flex flex-col items-center">
+    <section ref={ref} className="mt-20 mb-10 flex flex-col items-center content-center">
       <h2 className="text-3xl">Offres</h2>
-      <div className="mt-20 grid grid-cols-11 gap-8">
+      <div className="mt-20 grid grid-cols-11 gap-8 items-center">
         { plans.map((p, i) => (
-          <PricingCard key={i} plan={p} />
+          <PricingCard key={i} plan={p}/>
         ))}
       </div>
     </section>

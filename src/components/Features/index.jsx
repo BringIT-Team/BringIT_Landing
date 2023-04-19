@@ -26,7 +26,7 @@ const Features = forwardRef(({}, ref) => {
           />
         </div>
       </div>
-      <img className="partyDraw mx-auto mt-15 w-8/12 md:w-4/12" src={party} />
+      <img className="partyDraw mx-auto mt-15 w-8/12 md:w-4/12" src={party} alt="des gens qui font la fête" />
     </section>
   );
 });

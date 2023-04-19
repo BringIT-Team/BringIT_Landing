@@ -8,7 +8,7 @@ const Features = forwardRef(({}, ref) => {
     <section ref={ref} className="features text-center flex flex-col">
       <div className="m-auto">
         <h2 className="text-3xl">Fonctionnalités</h2>
-        <div className="grid grid-cols-12 gap-10 mt-16">
+        <div className="md:grid grid-cols-12 gap-10 mt-16">
           <Feature 
             icon="celebration"
             title="Créez vos soirées"
@@ -26,7 +26,7 @@ const Features = forwardRef(({}, ref) => {
           />
         </div>
       </div>
-      <img className="partyDraw mx-auto mt-18" src={party} />
+      <img className="partyDraw mx-auto mt-15 w-8/12 md:w-4/12" src={party} />
     </section>
   );
 });

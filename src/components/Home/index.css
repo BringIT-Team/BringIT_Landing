@@ -1,7 +1,9 @@
 .home {
   display: flex;
-  padding-bottom: 200px;
-  padding-top: 150px;
+  height: calc(100vh - 100px);
+  position: relative;
+  /* padding-bottom: 260px;
+  padding-top: 150px; */
   /* background-color: #f2f6fa; */
 }
 
@@ -11,10 +13,22 @@ h1 {
   color: #240e35;
   mix-blend-mode: lighten;
   line-height: 55px !important;
-  font-size: 48px !important;
   font-weight: 600 !important;
 }
 
 .titleBackground {
   background: linear-gradient(to left, #5825C0, #D02EE3);
+}
+
+a {
+  z-index: 0;
+}
+
+.scrollIcon {
+  font-family: "Material Icons Outlined";
+  font-size: 45px;
+  user-select: none;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 22.5px);
 }
